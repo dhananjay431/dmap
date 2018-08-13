@@ -18,6 +18,14 @@ this.dmap = {} || [];
             icon: image
         });
     };
+    dmap.markMove = function (map, myLatLng, title = '', icons = null) {
+        return new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: title,
+            icon: icons.car
+        });
+    };
     dmap.markRm = function (mark) {
         return mark.setMap(null);
     };
@@ -89,6 +97,10 @@ this.dmap = {} || [];
     dmap.speedInc = function (speed) {
         dmap.speed += speed;
         console.log(dmap.speed);
+    }
+    dmap.speedDec = function (speed) {
+        if(dmap.speed>50)
+        dmap.speed -= speed;
     }
     dmap.animateMarker = function (map, mark, icons, coords) {
         var target = 0;
