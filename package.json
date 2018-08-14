@@ -1,6 +1,6 @@
 {
   "name": "dbel431-dmap",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "download this file  add this tag  <script src=\"https://maps.google.com/maps/api/js?sensor=true\"></script> <ul> \t<li>dmap.map(div,latlng,zoom)</li> \t\t\t<ul> \t\t\t<li>div: Id </li> \t\t\t<li>myLatLng:{lat:19,lng:71}</li> \t\t\t<li>zoom:Number | 10  | optional </li> \t\t</ul>\t \t<li>dmap.mapCenter(map,latLng)</li>\t \t\t<ul> \t\t\t<li>map: map object</li> \t\t\t<li>myLatLng:{lat:19,lng:71}</li> \t\t</ul> \t<li>dmap.mark(map,myLatLng,title,image)</li> \t\t<ul> \t\t\t<li>map: map object</li> \t\t\t<li>myLatLng:{lat:19,lng:71}</li> \t\t\t<li>title:String | optional </li> \t\t\t<li>image:String | optional </li> \t\t</ul> </ul>",
   "main": "gulpfile.js",
   "dependencies": {
