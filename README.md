@@ -8,6 +8,7 @@ add this tag
 			<li>div: Id </li>
 			<li>myLatLng:{lat:19,lng:71}</li>
 			<li>zoom:Number | 10  | optional </li>
+			<li><a href="https://jsfiddle.net/dhananjay431/g0qf3uxj/">demo</a></li>
 		</ul>	
 	<li>dmap.mapCenter(map,latLng)</li>	
 		<ul>
@@ -22,5 +23,6 @@ add this tag
 			<li>image:String | optional </li>
 		</ul>
 </ul>
-<script async src="//jsfiddle.net/dhananjay431/g0qf3uxj/embed/"></script>
+
+
 
