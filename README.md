@@ -8,12 +8,13 @@ add this tag
 			<li>div: Id </li>
 			<li>myLatLng:{lat:19,lng:71}</li>
 			<li>zoom:Number | 10  | optional </li>
-			<li><a href="https://jsfiddle.net/dhananjay431/g0qf3uxj/">demo</a></li>
+			<li><a href="https://jsfiddle.net/dhananjay431/g0qf3uxj/" target="_blank">Visit demo</a></li>
 		</ul>	
 	<li>dmap.mapCenter(map,latLng)</li>	
 		<ul>
 			<li>map: map object</li>
 			<li>myLatLng:{lat:19,lng:71}</li>
+			<li><a href="https://jsfiddle.net/dhananjay431/4jndLevf/ "target="_blank">Visit demo</a>
 		</ul>
 	<li>dmap.mark(map,myLatLng,title,image)</li>
 		<ul>
@@ -21,7 +22,12 @@ add this tag
 			<li>myLatLng:{lat:19,lng:71}</li>
 			<li>title:String | optional </li>
 			<li>image:String | optional </li>
+			<li><a href="https://jsfiddle.net/dhananjay431/2dznm8q6/" target="_blank">Visit demo</a></li>
 		</ul>
+	<li>Info</li>
+	<ul>
+		<li><a href="https://jsfiddle.net/dhananjay431/r1uq63kt/" target="_blank">Visit demo</a></li>
+	</ul>
 </ul>
 
 
