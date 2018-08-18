@@ -23,7 +23,7 @@ this.dmap = {} || [];
             position: myLatLng,
             map: map,
             title: title,
-            icon: icons.car
+            icon: icons
         });
     };
     dmap.markRm = function (mark) {
@@ -121,7 +121,7 @@ this.dmap = {} || [];
                 i += step;
                 if (i < distance) {
                     var head = google.maps.geometry.spherical.computeHeading(mark.getPosition(), new google.maps.LatLng(lat, lng))
-                    icons.car.rotation=Math.floor(head/10)*10;
+                    icons.rotation=Math.floor(head/10)*10;
                     console.log(icons.car.rotation);
                     mark.setIcon(icons.car);
                     mark.setPosition(new google.maps.LatLng(lat, lng));
@@ -130,8 +130,8 @@ this.dmap = {} || [];
                 }
                 else {
                     var head = google.maps.geometry.spherical.computeHeading(mark.getPosition(), new google.maps.LatLng(lat, lng));
-                    icons.car.rotation=head;
-                    mark.setIcon(icons.car);
+                    icons.rotation=head;
+                    mark.setIcon(icons);
                     mark.setPosition(dest);
                     map.setCenter({ lat: lat, lng: lng });
                     target++;
@@ -166,18 +166,18 @@ this.dmap = {} || [];
                 if (i < distance) {
                     var head = google.maps.geometry.spherical.computeHeading(mark.getPosition(), new google.maps.LatLng(lat, lng))
                     if ((head != 0) || (head == NaN)) {
-                        icons.car.rotation = head
+                        icons.rotation = head
                     }
-                    mark.setIcon(icons.car);
+                    mark.setIcon(icons);
                     mark.setPosition(new google.maps.LatLng(lat, lng));
                     setTimeout(_moveMarker,delay);
                 }
                 else {
                     var head = google.maps.geometry.spherical.computeHeading(mark.getPosition(), new google.maps.LatLng(lat, lng));
                     if ((head != 0) || (head == NaN)) {
-                        icons.car.rotation = head
+                        icons.rotation = head
                     }
-                    mark.setIcon(icons.car);
+                    mark.setIcon(icons);
                     mark.setPosition(dest);
                     target++;
                     setTimeout(_goToPoint,delay);
